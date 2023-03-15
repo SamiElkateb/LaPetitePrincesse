@@ -7,9 +7,12 @@
 public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
+    private bool activated = false;
     
     public void TriggerDialogue()
     {
+        if (activated) return;
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        activated = true;
     }
 }

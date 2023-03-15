@@ -20,8 +20,8 @@ public class PlayerMovement : MonoBehaviour
     
     void Update()
     {
-        Debug.Log("Horizontal: " + Input.GetAxis("Horizontal"));
-        Debug.Log("Vertical: " + Input.GetAxis("Vertical"));
+        //Debug.Log("Horizontal: " + Input.GetAxis("Horizontal"));
+        //Debug.Log("Vertical: " + Input.GetAxis("Vertical"));
         moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")).normalized;
         // if (moveDirection != Vector3.zero) { // only update target rotation when moving
         //     targetRotation = Quaternion.LookRotation(moveDirection, transform.up);

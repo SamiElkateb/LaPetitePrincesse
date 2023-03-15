@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+
 
 /*
  * This script came from Brackeys tutorial on YouTube:
@@ -10,9 +12,10 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-    public Text nameText;
-    public Text dialogueText;
+    public TextMeshProUGUI nameText;
+    public TextMeshProUGUI dialogueText;
     public Queue<string> sentences;
+    public InteractionPromptUI _interactionPromptUI;
 
     private void Start()
     {
@@ -21,6 +24,11 @@ public class DialogueManager : MonoBehaviour
     
     public void StartDialogue(Dialogue dialogue)
     {
+        Debug.Log("Start conversation with " + dialogue.name);
+        foreach (var sentence in dialogue.sentences)
+        {
+            Debug.Log(sentence);
+        }
         nameText.text = dialogue.name;
         sentences.Clear();
         
@@ -34,30 +42,43 @@ public class DialogueManager : MonoBehaviour
     
     IEnumerator TypeSentence(string sentence)
     {
-        dialogueText.text = "";
+        string sentenceBeingDisplayed = "";
         foreach (char letter in sentence.ToCharArray())
         {
-            dialogueText.text += letter;
+            sentenceBeingDisplayed += letter;
+            _interactionPromptUI.SetUp(sentenceBeingDisplayed);
             yield return null;
         }
     }
 
     public void DisplayNextSentence()
     {
+        Debug.Log("DISPLAY NEXT SENTENCE");
         if (sentences.Count == 0)
         {
             EndDialogue();
+            Debug.Log("Sentences empty  ");
             return;
         }
         
         string sentence = sentences.Dequeue();
-        dialogueText.text = sentence;
+        Debug.Log(sentence);
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
     }
 
     public void EndDialogue()
     {
+        _interactionPromptUI.Close();
         Debug.Log("End of conversation  " + nameText.text);
+    }
+
+    // Need to use enter only for the elmental creatures
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            DisplayNextSentence();
+        }
     }
 }
