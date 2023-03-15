@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UIElements;
 
 [System.Serializable]
@@ -8,7 +9,8 @@ using UnityEngine.UIElements;
         public string text;
         private InteractionPromptUI _interactionPromptUI;
         private bool _isEntered = false;
-        
+        public UnityEvent onInteract;
+
         public void Start()
         {
             _interactionPromptUI = GameObject.Find("InteractiveCanva").GetComponent<InteractionPromptUI>();
@@ -37,7 +39,8 @@ using UnityEngine.UIElements;
         {
             if (_isEntered && Input.GetKey(KeyCode.F))
             {
-                _interactionPromptUI.SetUp("F was pressed");
+                onInteract.Invoke();
+                Debug.Log("F was pressed");
             }
         }
     }
