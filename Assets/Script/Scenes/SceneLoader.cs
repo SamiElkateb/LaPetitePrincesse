@@ -12,10 +12,14 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+    public void LoadPlanet1()
+    {
+        SceneManager.LoadScene("TestPlanet1");
+    }
 
     public void LoadMuserum()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("Museum");
     }
 
     public void LoadRace()
