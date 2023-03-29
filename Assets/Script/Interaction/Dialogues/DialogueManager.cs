@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 
 /*
@@ -15,11 +16,22 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
     public Queue<string> sentences;
+    
+    // Un potentiel problème lorsque plusieurs dialogues sont ajoutés avant la fin d'un dialogue en cours
+    public Queue<UnityEvent> events;
+    
     public InteractionPromptUI _interactionPromptUI;
 
     private void Start()
     {
         sentences = new Queue<string>();
+        events = new Queue<UnityEvent>();
+    }
+    
+    public void StartDialogue(Dialogue dialogue, UnityEvent unityEvent)
+    {
+        events.Enqueue(unityEvent);
+        StartDialogue(dialogue);
     }
     
     public void StartDialogue(Dialogue dialogue)
@@ -70,6 +82,10 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         _interactionPromptUI.Close();
+        if (events.Count > 0)
+        {
+            events.Dequeue().Invoke();
+        }
         Debug.Log("End of conversation  " + nameText.text);
     }
 

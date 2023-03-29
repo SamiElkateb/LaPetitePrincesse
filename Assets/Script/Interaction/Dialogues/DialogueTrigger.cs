@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 /*
  * This script came from Brackeys tutorial on YouTube:
@@ -8,11 +9,20 @@ public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
     private bool activated = false;
-    
+    private UnityEvent onInteract;
+
     public void TriggerDialogue()
     {
         if (activated) return;
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+
+        activated = true;
+    }
+    public void TriggerDialogue(UnityEvent unityEvent)
+    {
+        if (activated) return;
+        FindObjectOfType<DialogueManager>().StartDialogue(dialogue, unityEvent);
+
         activated = true;
     }
 }
