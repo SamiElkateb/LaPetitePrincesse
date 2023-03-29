@@ -25,15 +25,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture1:
-        m_Texture: {fileID: 2800000, guid: 00f21fc4b9289284ea30a1e86bf4a352, type: 3}
+        m_Texture: {fileID: 2800000, guid: 9e4ebd58f023f7d4ca4c88751a736fef, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2:
-        m_Texture: {fileID: 2800000, guid: 5971d7ca775188c408a9f11e125c286d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 9e4ebd58f023f7d4ca4c88751a736fef, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture3:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 9e4ebd58f023f7d4ca4c88751a736fef, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
