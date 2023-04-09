@@ -770,6 +770,8 @@ GameObject:
   - component: {fileID: 5312607137431293250}
   - component: {fileID: 5312607137431293251}
   - component: {fileID: 5312607137431293252}
+  - component: {fileID: 94912082734794225}
+  - component: {fileID: 226731520930135189}
   m_Layer: 0
   m_Name: Rocket Prefab
   m_TagString: Untagged
@@ -842,6 +844,66 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 850a44d9624e4646ad1855d351fd5521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &94912082734794225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5312607137431293253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3a5a16f5b6b43aeba1ba2274751b4f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionRange: 14
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 226731520930135189}
+        m_TargetAssemblyTypeName: pressKey, Assembly-CSharp
+        m_MethodName: OnEnter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onInteractEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 226731520930135189}
+        m_TargetAssemblyTypeName: pressKey, Assembly-CSharp
+        m_MethodName: OnExit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  isInteractable: 1
+--- !u!114 &226731520930135189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5312607137431293253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8944d89b25144fa0ab1ecfd5305f4ede, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: Press F key to leave the planet
+  onInteract:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5312607137440034660
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,10 +5,13 @@ public class HideAndSeekManager: MonoBehaviour
 {
     public string[] creaturesNameToDiscover;
     private bool[] creaturesDiscovered;
+    public Dialogue dialogueAllCreaturesDiscovered;
+    public Planet3Script planet3Script;
 
     public void Start()
     {
         creaturesDiscovered = new bool[creaturesNameToDiscover.Length];
+        planet3Script = GameObject.Find("GlobalManager").GetComponent<Planet3Script>();
     }
 
     public void CreatureDiscovered(string creatureNameDiscovered)
@@ -34,5 +37,11 @@ public class HideAndSeekManager: MonoBehaviour
             }
         }
         Debug.Log("All creatures discovered");
+        
+        // Trigger dialogue
+        FindObjectOfType<DialogueManager>().StartDialogue(dialogueAllCreaturesDiscovered);
+        
+        // Call the methode in Planet3Script
+        planet3Script.AllCreaturesDiscovered();
     }
 }

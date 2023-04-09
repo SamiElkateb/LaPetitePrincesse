@@ -7,8 +7,19 @@ public class Planet3Script : MonoBehaviour
     // Start is called before the first frame update
     
     private List<CreatureGlobalScript> creatures;
+    private Interactable rocketLauncherInteractable;
+    private Interactable endDialogueInteractable;
     void Start()
     {
+        // Desactivate the possibility to interact with the rocket launcher
+        rocketLauncherInteractable = GameObject.Find("RocketLauncher").GetComponent<Interactable>();
+        rocketLauncherInteractable.Desactivate();
+        
+        // Desactivate the possibility to interact with the end Dialogue
+        endDialogueInteractable = GameObject.Find("EndDialogue").GetComponent<Interactable>();
+        endDialogueInteractable.Desactivate();
+        
+        // Desactivate all interactions with the creatures
         creatures = new List<CreatureGlobalScript>();
         CreatureGlobalScript[] creaturesFound = FindObjectsOfType<CreatureGlobalScript>();
         foreach (var creature in creaturesFound)
@@ -32,6 +43,18 @@ public class Planet3Script : MonoBehaviour
             creature.GetComponent<Interactable>().Activate();
             creature.teleportToHiddenPosition();
         }
+    }
+    
+    public void AllCreaturesDiscovered()
+    {
+        Debug.Log("All creatures discovered in Planet 3 Script");
+        endDialogueInteractable.Activate();
+    }
+
+    public void ActivateRocketLauncher()
+    {
+        Debug.Log("Activating rocket launcher");
+        rocketLauncherInteractable.Activate();
     }
 
     // Update is called once per frame
