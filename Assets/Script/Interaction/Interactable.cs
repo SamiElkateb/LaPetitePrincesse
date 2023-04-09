@@ -8,12 +8,11 @@ public class Interactable : MonoBehaviour
     public float interactionRange = 0.5f;
     public UnityEvent onInteract;
     public UnityEvent onInteractEnd;
+    public bool isInteractable = true;
 
     public void Start()
     {
-        SphereCollider sc = gameObject.AddComponent<SphereCollider>();
-        sc.radius = interactionRange;
-        sc.isTrigger = true;
+        Activate();
     }
     
     public void OnTriggerEnter(Collider other)
@@ -42,6 +41,20 @@ public class Interactable : MonoBehaviour
             Debug.Log("Player exited interactable range");
             */
         }
+    }
+    
+    public void Activate()
+    {
+        isInteractable = true;
+        SphereCollider sc = gameObject.AddComponent<SphereCollider>();
+        sc.radius = interactionRange;
+        sc.isTrigger = true;
+    }
+    
+    public void Desactivate()
+    {
+        isInteractable = false;
+        Destroy(gameObject.GetComponent<SphereCollider>());
     }
 
     private void OnDrawGizmos()

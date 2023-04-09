@@ -37,7 +37,7 @@ using UnityEngine.UIElements;
 
         public void Update()
         {
-            if (_isEntered && Input.GetKeyDown(KeyCode.F))
+            if (_isEntered && Input.GetKeyDown(KeyCode.F) && GetComponent<SphereCollider>() != null)
             {
                 onInteract.Invoke();
                 Debug.Log("F was pressed");

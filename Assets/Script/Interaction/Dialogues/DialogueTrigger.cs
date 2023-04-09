@@ -10,7 +10,7 @@ public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
     private bool activated = false;
-    private UnityEvent onInteract;
+    public UnityEvent onInteract;
     public void Start()
     {
     }
@@ -22,6 +22,7 @@ public class DialogueTrigger : MonoBehaviour
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
         activated = true;
     }
+    
     public void TriggerDialogue(UnityEvent unityEvent)
     {
         if (activated) return;
@@ -29,13 +30,18 @@ public class DialogueTrigger : MonoBehaviour
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue, unityEvent);
         activated = true;
     }
+    
+    public void TriggerDialogueEvent()
+    {
+        TriggerDialogue(onInteract);
+    }
 
     private void desactivateComponents()
     {
         Debug.Log("Desactivate components");
         pressKey pressKey = GetComponent<pressKey>();
         pressKey.OnExit();
-        GetComponent<SphereCollider>().isTrigger = false;
+        GetComponent<SphereCollider>().enabled = false;
         pressKey.enabled = false;
         GetComponent<Interactable>().enabled = false;
     }
