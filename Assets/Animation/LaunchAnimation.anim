@@ -799,9 +799,9 @@ AnimationClip:
     intParameter: 0
     messageOptions: 0
   - time: 4.9166665
-    functionName: ChangeToMainCamera
-    data: 
-    objectReferenceParameter: {fileID: 11500000, guid: 3c7472f6054c46e08fb67c590518c489, type: 3}
+    functionName: TriggerOnAnimationComplete
+    data: Launch Anmiation
+    objectReferenceParameter: {fileID: 11500000, guid: 6bcbb77dee78463b91fc2245091ae7af, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0

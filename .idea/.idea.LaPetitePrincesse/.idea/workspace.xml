@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="88372f42-83c7-4129-a9b2-cc39ca0db6c6" name="Changes" comment="">
+    <list default="true" id="88372f42-83c7-4129-a9b2-cc39ca0db6c6" name="Changes" comment="planète 3 fin (dans l'ensemble)">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LaPetitePrincesse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LaPetitePrincesse/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Rocket Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Rocket Prefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Animation/CameraChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Animation/CameraChanger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/HideAndSeekLogic/CreatureGlobalScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/HideAndSeekLogic/CreatureGlobalScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Interaction/Interactable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Interaction/Interactable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Scenes/SceneLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Scenes/SceneLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/LaunchAnimation.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/LaunchAnimation.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Planet3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Planet3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/QuentinXPS/RiderProjects/LaPetitePrincesse/Assets/Animation/LaunchAnimation.anim" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/QuentinXPS/RiderProjects/LaPetitePrincesse/Assets/Script/Scenes/SceneLoader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/QuentinXPS/RiderProjects/LaPetitePrincesse/Assets/Script/Scenes/SceneLoader.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -89,7 +92,7 @@
       <workItem from="1681066475358" duration="8000" />
       <workItem from="1681070073986" duration="16000" />
       <workItem from="1681115116772" duration="2872000" />
-      <workItem from="1681129765585" duration="4205000" />
+      <workItem from="1681129765585" duration="5292000" />
     </task>
     <task id="LOCAL-00001" summary="Avancement sur la planète 3">
       <created>1681123365832</created>
@@ -98,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681123365832</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="suite planète 3">
+      <created>1681134360733</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681134360733</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +120,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Avancement sur la planète 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Avancement sur la planète 3" />
+    <MESSAGE value="suite planète 3" />
+    <MESSAGE value="planète 3 fin (dans l'ensemble)" />
+    <option name="LAST_COMMIT_MESSAGE" value="planète 3 fin (dans l'ensemble)" />
   </component>
 </project>
