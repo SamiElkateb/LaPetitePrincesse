@@ -772,6 +772,7 @@ GameObject:
   - component: {fileID: 5312607137431293252}
   - component: {fileID: 94912082734794225}
   - component: {fileID: 226731520930135189}
+  - component: {fileID: 6277490218915384092}
   m_Layer: 0
   m_Name: Rocket Prefab
   m_TagString: Untagged
@@ -902,6 +903,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: Press F key to leave the planet
   onInteract:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &6277490218915384092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5312607137431293253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bcbb77dee78463b91fc2245091ae7af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnAnimationComplete:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &5312607137440034660

@@ -17,6 +17,7 @@ public class Interactable : MonoBehaviour
     
     public void OnTriggerEnter(Collider other)
     {
+        Debug.Log("on Enter " + gameObject.name);
             if (other.gameObject.GetComponent<Player>() != null)
             {
                 onInteract.Invoke();
@@ -31,6 +32,7 @@ public class Interactable : MonoBehaviour
 
     public void OnTriggerExit(Collider other)
     {
+        Debug.Log("on Exit " + gameObject.name);
         if (other.gameObject.GetComponent<Player>() != null)
         {
             onInteractEnd.Invoke();

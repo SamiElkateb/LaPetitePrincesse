@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88372f42-83c7-4129-a9b2-cc39ca0db6c6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Planet.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LaPetitePrincesse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LaPetitePrincesse/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Planet3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Planet3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Rocket Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Rocket Prefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Animation/CameraChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Animation/CameraChanger.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/HideAndSeekLogic/CreatureGlobalScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/HideAndSeekLogic/CreatureGlobalScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/HideAndSeekLogic/Teleport.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/HideAndSeekLogic/Teleport.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/MenuScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Planet/MenuScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/MenuScript.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Planet/MenuScript.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Planet3Script.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Planet/Planet3Script.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Planet3Script.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Planet/Planet3Script.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Interaction/Interactable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Interaction/Interactable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Scenes/SceneLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Scenes/SceneLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,27 +18,28 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="2OCZKtoyZR9irXLFeAwgP1O3d86" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Discover.Launch.Via.Unity": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\QuentinXPS\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\QuentinXPS\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\QuentinXPS\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\QuentinXPS\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\QuentinXPS\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\QuentinXPS\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity 2021.3.18f1\Editor\Unity.exe" />
@@ -89,16 +88,28 @@
       <updated>1681066470590</updated>
       <workItem from="1681066475358" duration="8000" />
       <workItem from="1681070073986" duration="16000" />
-      <workItem from="1681115116772" duration="1605000" />
+      <workItem from="1681115116772" duration="2872000" />
+      <workItem from="1681129765585" duration="4205000" />
     </task>
+    <task id="LOCAL-00001" summary="Avancement sur la planète 3">
+      <created>1681123365832</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681123365832</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Avancement sur la planète 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Avancement sur la planète 3" />
   </component>
 </project>

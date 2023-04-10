@@ -30,6 +30,7 @@ public class CreatureGlobalScript: MonoBehaviour
         unityEvent.AddListener(hideAndSeekManager.CheckIfAllCreaturesDiscovered);
         dialogueTrigger.TriggerDialogue(unityEvent);
         Debug.Log("Creature name is: " + onCreature.creatureName);
+        Debug.Log("Component name is: " + onCreature.name);
         hideAndSeekManager.CreatureDiscovered(onCreature.creatureName);
         // hideAndSeekManager.CheckIfAllCreaturesDiscovered();
         // Need to TP the creature at the ned of the dialogue

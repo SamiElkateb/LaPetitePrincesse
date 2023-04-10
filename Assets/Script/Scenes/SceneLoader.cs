@@ -31,4 +31,9 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene(4);
     }
+    
+    public void LoadEndGame()
+    {
+        SceneManager.LoadScene(5);
+    }
 }
