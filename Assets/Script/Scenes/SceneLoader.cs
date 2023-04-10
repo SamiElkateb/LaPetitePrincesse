@@ -17,7 +17,7 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene("TestPlanet1");
     }
 
-    public void LoadMuserum()
+    public void LoadMuseum()
     {
         SceneManager.LoadScene("Museum");
     }
