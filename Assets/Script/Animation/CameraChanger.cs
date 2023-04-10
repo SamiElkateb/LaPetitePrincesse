@@ -15,7 +15,16 @@ public class CameraChanger : MonoBehaviour
         mRocketCamera = FindObjectOfType<RocketCamera>().GetComponent<Camera>();
         mPlayerMovement = FindObjectOfType<PlayerMovement>();
         playerGameObject = FindObjectOfType<Player>().gameObject;
-        playerGameObject.SetActive(false);
+        MeshRenderer[] meshRenderers = playerGameObject.GetComponentsInChildren<MeshRenderer>();
+        for (int i = 0; i < meshRenderers.Length; i++)
+        {
+            meshRenderers[i].enabled = false;
+        }
+        SkinnedMeshRenderer[] skinnedRenderers = playerGameObject.GetComponentsInChildren<SkinnedMeshRenderer>();
+        for (int i = 0; i < skinnedRenderers.Length; i++)
+        {
+            skinnedRenderers[i].enabled = false;
+        }
     }
     
     public void ChangeToRocketCamera()
@@ -24,7 +33,16 @@ public class CameraChanger : MonoBehaviour
         mMainCamera.enabled = false;
         mRocketCamera.enabled = true;
         mPlayerMovement.enabled = false;
-        playerGameObject.SetActive(false);
+        MeshRenderer[] meshRenderers = playerGameObject.GetComponentsInChildren<MeshRenderer>();
+        for (int i = 0; i < meshRenderers.Length; i++)
+        {
+            meshRenderers[i].enabled = true;
+        }
+        SkinnedMeshRenderer[] skinnedRenderers = playerGameObject.GetComponentsInChildren<SkinnedMeshRenderer>();
+        for (int i = 0; i < skinnedRenderers.Length; i++)
+        {
+            skinnedRenderers[i].enabled = true;
+        }
     }
     
     public void ChangeToMainCamera()
