@@ -3,14 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    public void PlayGame()
-    {
-        SceneManager.LoadScene(1);
-    }
-
+    
     public void LoadMenu()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("StartMenu");
     }
     public void LoadPlanet1()
     {
@@ -24,16 +20,16 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadRace()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene("Planet2");
     }
 
     public void LoadHideAndSeek()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene("Planet3");
     }
     
     public void LoadEndGame()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene("EndScreen");
     }
 }

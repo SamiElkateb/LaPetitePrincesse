@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="88372f42-83c7-4129-a9b2-cc39ca0db6c6" name="Changes" comment="planète 3 fin (dans l'ensemble)">
-      <change afterPath="$PROJECT_DIR$/Assets/Font/ARCADE_N SDF.asset" afterDir="false" />
+    <list default="true" id="88372f42-83c7-4129-a9b2-cc39ca0db6c6" name="Changes" comment="écran de fin">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LaPetitePrincesse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LaPetitePrincesse/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Interaction/Interactable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Interaction/Interactable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Astronaut/Character/Materials/Grey_Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized Astronaut/Character/Materials/Grey_Mat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Astronaut/Character/Materials/White_Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized Astronaut/Character/Materials/White_Mat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Stylized Astronaut/Character/Materials/Yellow_Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stylized Astronaut/Character/Materials/Yellow_Mat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Scenes/SceneLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Scenes/SceneLoader.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Search.settings" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Search.settings" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +15,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Users/QuentinXPS/RiderProjects/LaPetitePrincesse/Assets/Animation/LaunchAnimation.anim" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/QuentinXPS/RiderProjects/LaPetitePrincesse/Assets/Script/Scenes/SceneLoader.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/QuentinXPS/RiderProjects/LaPetitePrincesse/Assets/Script/Scenes/SceneLoader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.polybrush@1.1.3/Editor/Brush Modes/BrushMode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.polybrush@1.1.3/Editor/ProBuilderIntegration/ProBuilderBridge.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.polybrush@1.1.3/Runtime/Scripts/MonoBehaviour/OverlayRenderer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.polybrush@1.1.3/Runtime/Scripts/MonoBehaviour/ZoomOverride.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.settings-manager@2.0.1/Editor/ProjectUserSettings.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Editor/TMP_ResourcesLoader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Editor/UI/SelectableEditor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/QuentinXPS/RiderProjects/LaPetitePrincesse/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -97,7 +98,8 @@
       <workItem from="1681066475358" duration="8000" />
       <workItem from="1681070073986" duration="16000" />
       <workItem from="1681115116772" duration="2872000" />
-      <workItem from="1681129765585" duration="9706000" />
+      <workItem from="1681129765585" duration="9963000" />
+      <workItem from="1681155846220" duration="1667000" />
     </task>
     <task id="LOCAL-00001" summary="Avancement sur la planète 3">
       <created>1681123365832</created>
@@ -120,7 +122,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681144981658</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="stylisation des fenêtres de dialogue + fix du bug de la fusée sur la planète 3">
+      <created>1681150123799</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681150123799</updated>
+    </task>
+    <task id="LOCAL-00005" summary="écran de fin">
+      <created>1681158341332</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681158341332</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +150,8 @@
     <MESSAGE value="Avancement sur la planète 3" />
     <MESSAGE value="suite planète 3" />
     <MESSAGE value="planète 3 fin (dans l'ensemble)" />
-    <option name="LAST_COMMIT_MESSAGE" value="planète 3 fin (dans l'ensemble)" />
+    <MESSAGE value="stylisation des fenêtres de dialogue + fix du bug de la fusée sur la planète 3" />
+    <MESSAGE value="écran de fin" />
+    <option name="LAST_COMMIT_MESSAGE" value="écran de fin" />
   </component>
 </project>
