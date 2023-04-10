@@ -1,14 +1,21 @@
 using System.Collections;
+using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class RocketAnimation : MonoBehaviour
 {
     private Animator mAnimator;
-    // Start is called before the first frame update
     void Start()
     {
+        Scene m_Scene = SceneManager.GetActiveScene();
+        string sceneName = m_Scene.name;
         mAnimator = GetComponent<Animator>();
+        if(sceneName == "TestPlanet1" && GlobalVariables.hasSeenMuseum){
+            this.LaunchLaunchAnimation();
+        } else {
+            this.LaunchLandAnimation();
+        }
     }
 
     public void LaunchLaunchAnimation()
