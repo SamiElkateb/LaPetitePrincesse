@@ -12,7 +12,14 @@ public class ThirdPersonCam : MonoBehaviour
     public Transform movementDir;
     public Rigidbody rb;
     
+    float turnSmoothVelocity;
+    public float turnSmoothTime = 0.1f;
+    public GameObject target;
+
+    
     public float rotationSpeed;
+    
+    public Transform cam;
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -59,13 +66,11 @@ public class ThirdPersonCam : MonoBehaviour
 // }
 void Update() {
     // Get keyboard input
-    float horizontalInput = Input.GetAxis("Horizontal");
-    // float verticalInput = Input.GetAxis("Vertical");
+    // float horizontalInput = Input.GetAxis("Horizontal");
+    float horizontalInputMouse = Input.GetAxis("Mouse X") * 110;
 
-    // Construct rotation vector based on keyboard input
-    Vector3 rotationVector = new Vector3(0, horizontalInput, 0);
+    Vector3 rotationVector = new Vector3(0, horizontalInputMouse, 0);
 
-    // Rotate the object around its local Y and X axes based on rotation vector
     transform.Rotate(rotationVector * rotationSpeed * Time.deltaTime, Space.Self);
-}
+    }
 }
