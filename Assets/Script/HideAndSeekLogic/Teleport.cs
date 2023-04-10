@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class Teleport: MonoBehaviour
 {
-   public void TeleportToPosition(Vector3 position)
+   public void TeleportToPosition(Vector3 position, Vector3 rotation)
    {
-      gameObject.transform.parent.position = position;
+      Transform parentTransform = gameObject.transform.parent;
+      parentTransform.position = position;
+      parentTransform.rotation = Quaternion.Euler(rotation);
    }
 }

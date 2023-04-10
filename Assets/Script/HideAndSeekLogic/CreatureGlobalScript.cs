@@ -11,7 +11,9 @@ public class CreatureGlobalScript: MonoBehaviour
     private OnCreature onCreature;
     private Teleport teleport;
     public Vector3 hiddenPosition;
-    public Vector3 initialPosition;
+    public Vector3 hiddenRotation;
+    [FormerlySerializedAs("initialPosition")] public Vector3 endPosition;
+    public Vector3 endRotation;
     
     public void Start()
     {
@@ -24,7 +26,7 @@ public class CreatureGlobalScript: MonoBehaviour
     public void onInteract()
     {
         UnityEvent unityEvent = new UnityEvent();
-        unityEvent.AddListener(() => teleport.TeleportToPosition(initialPosition));
+        unityEvent.AddListener(() => teleport.TeleportToPosition(endPosition, endRotation));
         unityEvent.AddListener(hideAndSeekManager.CheckIfAllCreaturesDiscovered);
         dialogueTrigger.TriggerDialogue(unityEvent);
         Debug.Log("Creature name is: " + onCreature.creatureName);
@@ -36,7 +38,7 @@ public class CreatureGlobalScript: MonoBehaviour
     public void teleportToHiddenPosition()
     {
         Debug.Log("Teleporting to hidden position");
-        teleport.TeleportToPosition(hiddenPosition);
+        teleport.TeleportToPosition(hiddenPosition, hiddenRotation);
     }
     
     public void onEndDialogue()
