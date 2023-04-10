@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Creature
   - PrincessRenderer
+  - Sky
   layers:
   - Default
   - TransparentFX

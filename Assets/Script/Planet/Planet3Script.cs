@@ -11,6 +11,14 @@ public class Planet3Script : MonoBehaviour
     private Interactable endDialogueInteractable;
     void Start()
     {
+
+        // Set the sky as day
+        GameObject[] skys = GameObject.FindGameObjectsWithTag("Sky");
+        for (int i = 0; i < skys.Length; i++)
+        {
+            skys[i].GetComponent<Renderer>().material.SetTextureOffset("_MainTex", new Vector2(0.1f, 0));
+        }
+
         // Desactivate the possibility to interact with the rocket launcher
         rocketLauncherInteractable = GameObject.Find("RocketLauncher").GetComponent<Interactable>();
         rocketLauncherInteractable.Desactivate();
