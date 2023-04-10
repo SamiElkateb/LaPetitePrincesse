@@ -1081,7 +1081,7 @@ MonoBehaviour:
   m_text: "R\xE9alis\xE9 par :\nAur\xE9lia CHABANIER\nQuentin Dubois\nSami El Kateb"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: d6f6ce3a7589d4d4788fa6afdd4f4ec3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1299,7 +1299,7 @@ MonoBehaviour:
   m_text: La petite princesse
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: d6f6ce3a7589d4d4788fa6afdd4f4ec3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1827,6 +1827,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 94912082734794225, guid: a2104bf5c08c00f488ba7cbc834586ce, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 226731520930135189, guid: a2104bf5c08c00f488ba7cbc834586ce, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5312607136846540740, guid: a2104bf5c08c00f488ba7cbc834586ce, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1888,6 +1896,14 @@ PrefabInstance:
       value: -57.885
       objectReference: {fileID: 0}
     - target: {fileID: 5312607137431293250, guid: a2104bf5c08c00f488ba7cbc834586ce, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5312607137431293251, guid: a2104bf5c08c00f488ba7cbc834586ce, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5312607137431293252, guid: a2104bf5c08c00f488ba7cbc834586ce, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
