@@ -2,6 +2,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.PlayerLoop;
 
 public class Interactable : MonoBehaviour
 {
@@ -9,9 +10,11 @@ public class Interactable : MonoBehaviour
     public UnityEvent onInteract;
     public UnityEvent onInteractEnd;
     public bool isInteractable = true;
+    private SphereCollider _sphereCollider;
 
     public void Start()
     {
+        Initialization();
         Activate();
     }
     
@@ -44,19 +47,27 @@ public class Interactable : MonoBehaviour
             */
         }
     }
+
+    private void Initialization()
+    {
+        _sphereCollider = gameObject.AddComponent<SphereCollider>();
+        _sphereCollider.radius = interactionRange;
+        _sphereCollider.isTrigger = true;
+        _sphereCollider.enabled = false;
+        isInteractable = false;
+        
+    }
     
     public void Activate()
     {
         isInteractable = true;
-        SphereCollider sc = gameObject.AddComponent<SphereCollider>();
-        sc.radius = interactionRange;
-        sc.isTrigger = true;
+        _sphereCollider.enabled = true;
     }
     
     public void Desactivate()
     {
-        isInteractable = false;
-        Destroy(gameObject.GetComponent<SphereCollider>());
+       isInteractable = false;
+       _sphereCollider.enabled = false;
     }
 
     private void OnDrawGizmos()
