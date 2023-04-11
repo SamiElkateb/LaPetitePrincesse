@@ -7,6 +7,7 @@ using TMPro;
 public class UIManager : MonoBehaviour
 {
     public TextMeshProUGUI text;
+    private bool _isTextActive = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,17 @@ public class UIManager : MonoBehaviour
     }
 
     public void UpdateLapText(string message) {
+        Debug.Log("Go here");
         text.text = message;
+    }
+    
+    public void ActivateText() {
+        _isTextActive = true;
+        text.gameObject.SetActive(true);
+    }
+    
+    public void DeactivateText() {
+        _isTextActive = false;
+        text.gameObject.SetActive(false);
     }
 }

@@ -7,13 +7,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88372f42-83c7-4129-a9b2-cc39ca0db6c6" name="Changes" comment="">
+    <list default="true" id="88372f42-83c7-4129-a9b2-cc39ca0db6c6" name="Changes" comment="On peut conduire correctement maintenant">
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Racing/TPCar.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LaPetitePrincesse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LaPetitePrincesse/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Planet2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Planet2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Racing/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Racing/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Racing/LapManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Racing/LapManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Racing/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Racing/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +120,7 @@
       <workItem from="1681115116772" duration="2872000" />
       <workItem from="1681129765585" duration="9963000" />
       <workItem from="1681155846220" duration="1667000" />
-      <workItem from="1681231562200" duration="5251000" />
+      <workItem from="1681231562200" duration="8863000" />
     </task>
     <task id="LOCAL-00001" summary="Avancement sur la planète 3">
       <created>1681123365832</created>
@@ -156,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681158341332</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="On peut conduire correctement maintenant">
+      <created>1681237129912</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681237129912</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +180,7 @@
     <MESSAGE value="planète 3 fin (dans l'ensemble)" />
     <MESSAGE value="stylisation des fenêtres de dialogue + fix du bug de la fusée sur la planète 3" />
     <MESSAGE value="écran de fin" />
-    <option name="LAST_COMMIT_MESSAGE" value="écran de fin" />
+    <MESSAGE value="On peut conduire correctement maintenant" />
+    <option name="LAST_COMMIT_MESSAGE" value="On peut conduire correctement maintenant" />
   </component>
 </project>

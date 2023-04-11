@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class LapManager : MonoBehaviour
 {
@@ -10,7 +11,8 @@ public class LapManager : MonoBehaviour
 
     private List<PlayerRank> playerRanks = new List<PlayerRank>();
     private PlayerRank mainPlayerRank;
-    public UnityEvent onPlayerFinished = new UnityEvent();
+    [FormerlySerializedAs("onPlayerFinished")] public UnityEvent onPlayerFinishedWin = new UnityEvent();
+    public UnityEvent onPlayerFinishedLoose = new UnityEvent();
     public string PlayerCarTag = "PlayerCar";
 
     void Start()
@@ -22,8 +24,8 @@ public class LapManager : MonoBehaviour
             playerRanks.Add(new PlayerRank(carIdentity));
         }
         ListenCheckpoints(true);
-        ui.UpdateLapText("Lap "+ playerRanks[0].lapNumber + " / " + totalLaps);
-        Debug.Log("Lap "+ playerRanks[0].lapNumber + " / " + totalLaps);
+        ui.UpdateLapText("Tour : "+ playerRanks[0].lapNumber + " / " + totalLaps);
+        Debug.Log("Tour : "+ playerRanks[0].lapNumber + " / " + totalLaps);
         mainPlayerRank = playerRanks.Find(player => player.identity.gameObject.CompareTag(PlayerCarTag));
     }
 
@@ -63,19 +65,20 @@ public class LapManager : MonoBehaviour
                     // if first winner, display its name
                     if (player.rank == 1)
                     {
-                        Debug.Log(player.identity.driverName + " won");
-                        ui.UpdateLapText(player.identity.driverName + " won");
+                        Debug.Log(player.identity.driverName + " a gagné");
+                        ui.UpdateLapText(player.identity.driverName + " a gagné");
                     }
                     else if (player == mainPlayerRank) // display player rank if not winner
                     {
-                        ui.UpdateLapText("\nYou finished in " + mainPlayerRank.rank + " place");
+                        ui.UpdateLapText("\nVous avez fini à la " + mainPlayerRank.rank + " place");
+                        onPlayerFinishedLoose.Invoke();
                     }
 
-                    if (player == mainPlayerRank) onPlayerFinished.Invoke();
+                    if (player == mainPlayerRank) onPlayerFinishedWin.Invoke();
                 }
                 else {
                     Debug.Log(player.identity.driverName + ": lap " + player.lapNumber);
-                    if(car.gameObject.tag == "Player") ui.UpdateLapText("Lap " + player.lapNumber + " / " + totalLaps);
+                    if(car.gameObject.CompareTag(PlayerCarTag)) ui.UpdateLapText("Tour : " + player.lapNumber + " / " + totalLaps);
                 }
             }
             // next checkpoint reached
