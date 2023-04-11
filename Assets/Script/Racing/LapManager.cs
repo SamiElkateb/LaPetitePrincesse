@@ -11,18 +11,20 @@ public class LapManager : MonoBehaviour
     private List<PlayerRank> playerRanks = new List<PlayerRank>();
     private PlayerRank mainPlayerRank;
     public UnityEvent onPlayerFinished = new UnityEvent();
+    public string PlayerCarTag = "PlayerCar";
 
     void Start()
     {
+        Debug.Log("Start Received");
         // Get players in the scene
-        foreach(CarIdentity carIdentity in GameObject.FindObjectsOfType<CarIdentity>())
+        foreach(CarIdentity carIdentity in FindObjectsOfType<CarIdentity>())
         {
             playerRanks.Add(new PlayerRank(carIdentity));
         }
         ListenCheckpoints(true);
         ui.UpdateLapText("Lap "+ playerRanks[0].lapNumber + " / " + totalLaps);
         Debug.Log("Lap "+ playerRanks[0].lapNumber + " / " + totalLaps);
-        mainPlayerRank = playerRanks.Find(player => player.identity.gameObject.tag == "Player");
+        mainPlayerRank = playerRanks.Find(player => player.identity.gameObject.CompareTag(PlayerCarTag));
     }
 
     private void ListenCheckpoints(bool subscribe)
