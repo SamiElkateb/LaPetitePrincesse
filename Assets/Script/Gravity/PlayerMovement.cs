@@ -44,10 +44,8 @@ public class PlayerMovement : MonoBehaviour
             float calcMoveSpeed = isRunning ? moveSpeed * runMultiplicator : moveSpeed;
             rb.MovePosition(rb.position + transform.TransformDirection(moveDirection) * calcMoveSpeed * Time.deltaTime);
             if(isRunning){
-                animator.SetBool("isRunning", true);
                 Debug.Log("IsRunning");
             } else {
-                animator.SetBool("isRunning", false);
                 Debug.Log("IsNotRunning");
             } 
             animator.SetBool("isMoving", true);

@@ -4,8 +4,7 @@ using UnityEngine;
 public class CameraChanger : MonoBehaviour
 {
     
-    private Camera mMainCamera;
-    private Camera mRocketCamera;
+    private Camera mMainCamera; private Camera mRocketCamera;
     private PlayerMovement mPlayerMovement;
     private GameObject playerGameObject;
     
@@ -14,6 +13,28 @@ public class CameraChanger : MonoBehaviour
         mMainCamera = FindObjectOfType<MainCamera>().GetComponent<Camera>();
         mRocketCamera = FindObjectOfType<RocketCamera>().GetComponent<Camera>();
         mPlayerMovement = FindObjectOfType<PlayerMovement>();
+        deactivatePlayerRendered();
+    }
+    
+    public void ChangeToRocketCamera()
+    {
+        Debug.Log("Change to rocket camera");
+        mMainCamera.enabled = false;
+        mRocketCamera.enabled = true;
+        mPlayerMovement.enabled = false;
+        deactivatePlayerRendered();
+    }
+    
+    public void ChangeToMainCamera()
+    {
+        Debug.Log("Change to main camera");
+        mMainCamera.enabled = true;
+        mRocketCamera.enabled = false;
+        mPlayerMovement.enabled = true;
+        activatePlayerRenderer();
+    }
+
+    void deactivatePlayerRendered(){
         playerGameObject = FindObjectOfType<Player>().gameObject;
         MeshRenderer[] meshRenderers = playerGameObject.GetComponentsInChildren<MeshRenderer>();
         for (int i = 0; i < meshRenderers.Length; i++)
@@ -26,13 +47,10 @@ public class CameraChanger : MonoBehaviour
             skinnedRenderers[i].enabled = false;
         }
     }
+
     
-    public void ChangeToRocketCamera()
-    {
-        Debug.Log("Change to rocket camera");
-        mMainCamera.enabled = false;
-        mRocketCamera.enabled = true;
-        mPlayerMovement.enabled = false;
+    void activatePlayerRenderer(){
+        playerGameObject = FindObjectOfType<Player>().gameObject;
         MeshRenderer[] meshRenderers = playerGameObject.GetComponentsInChildren<MeshRenderer>();
         for (int i = 0; i < meshRenderers.Length; i++)
         {
@@ -43,14 +61,5 @@ public class CameraChanger : MonoBehaviour
         {
             skinnedRenderers[i].enabled = true;
         }
-    }
-    
-    public void ChangeToMainCamera()
-    {
-        Debug.Log("Change to main camera");
-        mMainCamera.enabled = true;
-        mRocketCamera.enabled = false;
-        mPlayerMovement.enabled = true;
-        playerGameObject.SetActive(true);
     }
 }
