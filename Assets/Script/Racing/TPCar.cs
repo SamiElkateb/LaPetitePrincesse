@@ -21,6 +21,7 @@ public class TPCar : MonoBehaviour
 
     public void ResetInitialPosition()
     {
+        Debug.Log("Resetting initial position");
         gameObject.transform.position = initialPosition;
         gameObject.transform.rotation = Quaternion.Euler(initialRotation);
     }

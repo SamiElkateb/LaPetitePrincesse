@@ -20,10 +20,13 @@ public class GameManager : MonoBehaviour
     
     private Interactable rocketLauncherInteractable;
     private PlayerMovement _playerMovement;
+    private Interactable carPlayerInteractable;
     
     public DialogueManager dialogueManager;
     public Dialogue dialogueWin;
     public Dialogue dialogueLose;
+    
+    public LapManager lapManager;
 
     private void Awake()
     {
@@ -48,6 +51,13 @@ public class GameManager : MonoBehaviour
 
     public void StartCountdown()
     {
+        // To close the interaction Canva displayed because of the car
+        var _interactionPromptUI = GameObject.Find("InteractiveCanva").GetComponent<InteractionPromptUI>();
+        _interactionPromptUI.Close();
+        
+        lapManager.StartLapManager();
+        _resetPositionCar();
+        
         // Desactivate the mesh renderer of the player
         uiManager.ActivateText();
         _setPlayerRendering(false);
@@ -67,6 +77,7 @@ public class GameManager : MonoBehaviour
     public void StartRacing()
     {
         FreezePlayers(false);
+        _resetPositionCar();
     }
 
     private IEnumerator Countdown()
@@ -98,8 +109,14 @@ public class GameManager : MonoBehaviour
 
     private void FreezePlayers(bool freeze)
     {
-        foreach (var aicontrol in aiControls) aicontrol.enabled = !freeze;
+        foreach (var aicontrol in aiControls)
+        {
+            aicontrol.enabled = !freeze;
+            aicontrol.GetComponent<CarMovements>().enabled = !freeze;
+        }
+        
         playerControls.enabled = !freeze;
+        playerControls.GetComponent<CarMovements>().enabled = !freeze;
     }
 
     private void _setPlayerRendering(bool boolean)
@@ -122,6 +139,7 @@ public class GameManager : MonoBehaviour
         foreach (var ai in aiControls)
         {
             ai.GetComponent<TPCar>().ResetInitialPosition();
+            ai.Initialization();
         }
     }
 
@@ -129,9 +147,7 @@ public class GameManager : MonoBehaviour
     {
         // Freeze Player
         FreezePlayers(true);
-
-        // Activate RocketLauncher
-        rocketLauncherInteractable.Activate();
+        _resetPositionCar();
         
         uiManager.DeactivateText();
         
@@ -145,7 +161,6 @@ public class GameManager : MonoBehaviour
     public void EndRaceLose()
     {
         EndRace();
-        playerControls.GetComponent<Interactable>().enabled = true;
         dialogueManager.StartDialogue(dialogueLose);
     }
 

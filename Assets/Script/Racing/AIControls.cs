@@ -19,7 +19,11 @@ public class AIControls : MonoBehaviour
 
     void Awake()
     {
-        // TODO : Initialize waypoints list by finding all Transform waypoints inside waypointsHolder
+        Initialization();
+    }
+
+    public void Initialization()
+    {
         waypoints = new List<Transform>();
         foreach(Transform waypoint in waypointsHolder.GetComponentsInChildren<Transform>()) {
             waypoints.Add(waypoint);

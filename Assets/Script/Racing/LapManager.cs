@@ -9,14 +9,15 @@ public class LapManager : MonoBehaviour
     public int totalLaps = 3;
     public UIManager ui;
 
-    private List<PlayerRank> playerRanks = new List<PlayerRank>();
+    private List<PlayerRank> playerRanks;
     private PlayerRank mainPlayerRank;
     [FormerlySerializedAs("onPlayerFinished")] public UnityEvent onPlayerFinishedWin = new UnityEvent();
     public UnityEvent onPlayerFinishedLoose = new UnityEvent();
     public string PlayerCarTag = "PlayerCar";
 
-    void Start()
+    public void StartLapManager()
     {
+        playerRanks = new List<PlayerRank>();
         Debug.Log("Start Received");
         // Get players in the scene
         foreach(CarIdentity carIdentity in FindObjectsOfType<CarIdentity>())
