@@ -1,3 +1,4 @@
+using System;
 using System.Collections; using UnityEngine;
 public class GameManager : MonoBehaviour
 {
@@ -9,12 +10,9 @@ public class GameManager : MonoBehaviour
    public AudioClip lowBeep;
    public AudioClip highBeep;
 
-   void Awake()
-   {
-       StartGame();
-   }
    public void StartGame()
    {
+       Debug.Log("im useless ^^");
        FreezePlayers(true);
        StartCoroutine("Countdown");
    }
@@ -46,6 +44,7 @@ public class GameManager : MonoBehaviour
    }
    void FreezePlayers(bool freeze)
    {
+       Debug.Log("brrr");
        playerControls.enabled = !freeze;
        foreach(AIControls ai in aiControls){
         ai.enabled = !freeze;
