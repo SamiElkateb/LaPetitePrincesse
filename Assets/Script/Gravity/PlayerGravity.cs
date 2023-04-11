@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerGravity : MonoBehaviour
 {
@@ -12,7 +13,15 @@ public class PlayerGravity : MonoBehaviour
     void Start()
     {
         Rigidbody rb = GetComponent<Rigidbody>();
-        rb.useGravity = false;
+
+        Scene m_Scene = SceneManager.GetActiveScene();
+        string sceneName = m_Scene.name;
+        if(sceneName == "Planet2"){
+            rb.useGravity = true;
+        } else
+        {
+            rb.useGravity = false;
+        }
         
         // Pour l'instant, il n'y a pas de rotation
         rb.constraints = RigidbodyConstraints.FreezeRotation;

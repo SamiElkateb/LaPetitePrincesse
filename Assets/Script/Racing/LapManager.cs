@@ -72,10 +72,16 @@ public class LapManager : MonoBehaviour
                     else if (player == mainPlayerRank) // display player rank if not winner
                     {
                         ui.UpdateLapText("\nVous avez fini à la " + mainPlayerRank.rank + " place");
-                        onPlayerFinishedLoose.Invoke();
                     }
 
-                    if (player == mainPlayerRank) onPlayerFinishedWin.Invoke();
+                    if (player == mainPlayerRank)
+                    {
+                        onPlayerFinishedWin.Invoke();
+                    }
+                    else
+                    {
+                        onPlayerFinishedLoose.Invoke();
+                    }
                 }
                 else {
                     Debug.Log(player.identity.driverName + ": lap " + player.lapNumber);

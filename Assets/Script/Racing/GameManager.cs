@@ -68,7 +68,10 @@ public class GameManager : MonoBehaviour
         playerCamera.enabled = false;
         
         // Remove Script Interactable on the Car
-        playerControls.GetComponent<Interactable>().enabled = false;
+        carPlayerInteractable = playerControls.GetComponent<Interactable>();
+        carPlayerInteractable.Desactivate();
+        carPlayerInteractable.enabled = false;
+        carPlayerInteractable.GetComponent<pressKey>().enabled = false;
 
         // Start the countdown
         StartCoroutine("Countdown");
@@ -160,12 +163,20 @@ public class GameManager : MonoBehaviour
     
     public void EndRaceLose()
     {
+        Debug.Log("EndRaceLose");
         EndRace();
         dialogueManager.StartDialogue(dialogueLose);
+        
+        carPlayerInteractable = playerControls.GetComponent<Interactable>();
+        carPlayerInteractable.GetComponent<pressKey>().enabled = false;
+        carPlayerInteractable.enabled = enabled;
+        carPlayerInteractable.Activate();
+
     }
 
     public void EndRaceWin()
     {
+        Debug.Log("EndRaceWin");
         EndRace();
         rocketLauncherInteractable.Activate();
         dialogueManager.StartDialogue(dialogueWin);
