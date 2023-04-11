@@ -43,12 +43,12 @@ public class PlayerMovement : MonoBehaviour
             Rigidbody rb = GetComponent<Rigidbody>();
             float calcMoveSpeed = isRunning ? moveSpeed * runMultiplicator : moveSpeed;
             rb.MovePosition(rb.position + transform.TransformDirection(moveDirection) * calcMoveSpeed * Time.deltaTime);
-            if(isRunning){
-                Debug.Log("IsRunning");
-            } else {
-                Debug.Log("IsNotRunning");
-            } 
             animator.SetBool("isMoving", true);
+            if(isRunning){
+                animator.SetBool("isRunning", true);
+            } else {
+                animator.SetBool("isRunning", false);
+            } 
             // transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationSpeed); // rotate towards target rotation
         }
         else
