@@ -7,13 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88372f42-83c7-4129-a9b2-cc39ca0db6c6" name="Changes" comment="avancement">
+    <list default="true" id="88372f42-83c7-4129-a9b2-cc39ca0db6c6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LaPetitePrincesse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LaPetitePrincesse/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/LaunchAnimation.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/LaunchAnimation.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Planet2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Planet2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Gravity/PlayerGravity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Gravity/PlayerGravity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Racing/AIControls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Racing/AIControls.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Racing/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Racing/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Racing/LapManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Racing/LapManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +21,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.collab-proxy@2.0.0/Editor/PlasticSCM/Views/PendingChanges/Dialogs/EmptyCheckinMessageDialog.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.polybrush@1.1.3/Editor/Brush Modes/BrushMode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.polybrush@1.1.3/Editor/ProBuilderIntegration/ProBuilderBridge.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.polybrush@1.1.3/Runtime/Scripts/MonoBehaviour/OverlayRenderer.cs" root0="SKIP_HIGHLIGHTING" />
@@ -28,7 +29,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.settings-manager@2.0.1/Editor/ProjectUserSettings.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Editor/TMP_ResourcesLoader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Editor/UI/SelectableEditor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/QuentinXPS/RiderProjects/LaPetitePrincesse/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/GraphicRebuildTracker.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -39,27 +40,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Discover.Launch.Via.Unity": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\QuentinXPS\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\QuentinXPS\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\QuentinXPS\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\QuentinXPS\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\QuentinXPS\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\QuentinXPS\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity 2021.3.18f1\Editor\Unity.exe" />
@@ -119,7 +120,8 @@
       <workItem from="1681115116772" duration="2872000" />
       <workItem from="1681129765585" duration="9963000" />
       <workItem from="1681155846220" duration="1667000" />
-      <workItem from="1681231562200" duration="15415000" />
+      <workItem from="1681231562200" duration="16492000" />
+      <workItem from="1681256516524" duration="1545000" />
     </task>
     <task id="LOCAL-00001" summary="Avancement sur la planète 3">
       <created>1681123365832</created>
@@ -177,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681244822909</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="planète 2 suite">
+      <created>1681247502271</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1681247502271</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +205,7 @@
     <MESSAGE value="On peut conduire correctement maintenant" />
     <MESSAGE value="avancement planète 2" />
     <MESSAGE value="avancement" />
-    <option name="LAST_COMMIT_MESSAGE" value="avancement" />
+    <MESSAGE value="planète 2 suite" />
+    <option name="LAST_COMMIT_MESSAGE" value="planète 2 suite" />
   </component>
 </project>

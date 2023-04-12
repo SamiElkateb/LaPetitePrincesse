@@ -168,7 +168,7 @@ public class GameManager : MonoBehaviour
         dialogueManager.StartDialogue(dialogueLose);
         
         carPlayerInteractable = playerControls.GetComponent<Interactable>();
-        carPlayerInteractable.GetComponent<pressKey>().enabled = false;
+        carPlayerInteractable.GetComponent<pressKey>().enabled = true;
         carPlayerInteractable.enabled = enabled;
         carPlayerInteractable.Activate();
 

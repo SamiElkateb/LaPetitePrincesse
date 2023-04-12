@@ -67,20 +67,18 @@ public class LapManager : MonoBehaviour
                     if (player.rank == 1)
                     {
                         Debug.Log(player.identity.driverName + " a gagné");
-                        ui.UpdateLapText(player.identity.driverName + " a gagné");
+                        // ui.UpdateLapText(player.identity.driverName + " a gagné");
                     }
                     else if (player == mainPlayerRank) // display player rank if not winner
                     {
                         ui.UpdateLapText("\nVous avez fini à la " + mainPlayerRank.rank + " place");
+                        onPlayerFinishedLoose.Invoke();
+                        return;
                     }
 
                     if (player == mainPlayerRank)
                     {
                         onPlayerFinishedWin.Invoke();
-                    }
-                    else
-                    {
-                        onPlayerFinishedLoose.Invoke();
                     }
                 }
                 else {
