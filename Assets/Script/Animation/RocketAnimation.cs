@@ -11,7 +11,7 @@ public class RocketAnimation : MonoBehaviour
         Scene m_Scene = SceneManager.GetActiveScene();
         string sceneName = m_Scene.name;
         mAnimator = GetComponent<Animator>();
-        if(sceneName == "TestPlanet1" && GlobalVariables.hasSeenMuseum){
+        if(sceneName == "Planet1" && GlobalVariables.hasSeenMuseum){
             this.LaunchLaunchAnimation();
         } else {
             this.LaunchLandAnimation();

@@ -12,16 +12,16 @@ EditorBuildSettings:
     path: Assets/Scenes/StartMenu.unity
     guid: cfbff940b55e60d44b1f1ac598bbeb15
   - enabled: 1
-    path: Assets/Scenes/TestPlanet1.unity
+    path: Assets/Scenes/Planets/Planet1.unity
     guid: 63c82b006d8ca24429dbf7a339f8855b
   - enabled: 1
-    path: Assets/Scenes/Museum.unity
+    path: Assets/Scenes/Planets/Museum.unity
     guid: 2912f1c6f55c046d09c20ec14e98097c
   - enabled: 1
-    path: Assets/Scenes/Planet2.unity
+    path: Assets/Scenes/Planets/Planet2.unity
     guid: cd368012ba25286469d1ea9b8a66bb06
   - enabled: 1
-    path: Assets/Scenes/Planet3.unity
+    path: Assets/Scenes/Planets/Planet3.unity
     guid: 745cbe46b27a8314fafe93e01ce6911e
   - enabled: 1
     path: Assets/Scenes/EndScreen.unity

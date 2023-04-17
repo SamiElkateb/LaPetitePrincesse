@@ -10,7 +10,7 @@ public class SceneLoader : MonoBehaviour
     }
     public void LoadPlanet1()
     {
-        SceneManager.LoadScene("TestPlanet1");
+        SceneManager.LoadScene("Planet1");
     }
 
     public void LoadMuseum()
