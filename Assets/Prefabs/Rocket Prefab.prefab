@@ -901,7 +901,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8944d89b25144fa0ab1ecfd5305f4ede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: "Appuyez sur F pour quitter la plan\xE8te"
+  text: Appuyer sur F pour quitter la planete
   onInteract:
     m_PersistentCalls:
       m_Calls:
