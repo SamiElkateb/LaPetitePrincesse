@@ -7,7 +7,15 @@
 
 ## Ressources utilisées
 
-### Assets
+### Musiques
+- [Sci-Fi BGM #6](https://assetstore.unity.com/packages/audio/music/sci-fi-bgm-6-245973) de B.G.M
+- [Casual Game BGM #5](https://assetstore.unity.com/packages/audio/music/casual-game-bgm-5-135943) de B.G.M
+- [Seamless Loop and Short Music](https://assetstore.unity.com/packages/audio/music/seamless-loop-and-short-music-107732) de Fantom
+- [Soft RPG Music Pack](https://assetstore.unity.com/packages/audio/music/soft-rpg-music-pack-212935) d'Ezdeha - Sound Maker
+- [Adventure Music and SFX](https://assetstore.unity.com/packages/audio/music/adventure-music-and-sfx-221545) de whatsoundsnice
+- [Sc-Fi Music](https://assetstore.unity.com/packages/audio/music/sc-fi-music-214312) de Theo Prior Music
+
+### Assets Graphiques
 
 #### Toutes les planètes
 - [Space Rocket Toy](https://sketchfab.com/3d-models/space-rocket-toy-bbaebe57f0cc4d179d6b86021effd987#download) de samliau
@@ -24,16 +32,21 @@
 - [Low Poly Street V3](https://sketchfab.com/3d-models/low-poly-street-v3-6a2bf7baba794aaca2e55171b526d452) d'Aditya Graphical
 
 #### Planète 2
+- [Stylized Astronaut](https://assetstore.unity.com/packages/3d/characters/humanoids/sci-fi/stylized-astronaut-114298) de PULSAR BYTES
+- [Modular Lowpoly Track Roads FREE](https://assetstore.unity.com/packages/3d/environments/roadways/modular-lowpoly-track-roads-free-205188) de BE DRILL ENTER
+
 #### Planète 3
+- [Low Poly Rock Pack](https://assetstore.unity.com/packages/3d/environments/low-poly-rock-pack-57874) de Broken Vector
+- [Free Low Poly Nature Forest](https://assetstore.unity.com/packages/3d/environments/landscapes/free-low-poly-nature-forest-205742) de Pure Poly
+- [Low Poly Environment Park](https://assetstore.unity.com/packages/3d/environments/low-poly-environment-park-242702) de Palmov Island
+- [Low Poly Houses Free Pack](https://assetstore.unity.com/packages/3d/props/exterior/low-poly-houses-free-pack-243926) de Palmov Island
+- [Tent Pack](https://assetstore.unity.com/packages/3d/environments/fantasy/tent-pack-19370) de ZugZug Art
 
 ### Tutoriels
 
 #### Cinématographie
 - [FIRST PERSON MOVEMENT in Unity - FPS Controller](https://www.youtube.com/watch?v=_QajrabyTJc&t=826s) de Brackeys
 - [THIRD PERSON MOVEMENT in Unity](https://www.youtube.com/watch?v=4HpC--2iowE&t=1002s) de Brackeys
-
-#### Gravité
-- [Unity Tutorial: Faux Gravity (walk on planets)](https://www.youtube.com/watch?v=gHeQ8Hr92P4) de Sebastian Lague
 
 #### Animation
 - [Blender Animation to Unity Tutorial](https://www.youtube.com/watch?v=uWexElqDcaA) de Jayanam
@@ -45,16 +58,17 @@
 - [How to make a Dialogue System in Unity](https://www.youtube.com/watch?v=_nRzoTzeyxU) de Brackeys
 - [Unity Interaction System | How To Interact With Any Game Object In Unity](https://www.youtube.com/watch?v=THmW4YolDok) de Dan Pos
 
-#### Exportation de Blender à Unity
-- [EXPORTING 3D Models from UNITY to BLENDER (FBX Exporter)](https://www.youtube.com/watch?v=-voE4FrU0Ms) de SpeedTutor
-
-#### Credit Scene
-- [Mini Unity Tutorial - How To Create Scrolling Credits Scene - Beginners Tutorial](https://www.youtube.com/watch?v=cj6hwCjiVZE) de Jimmy Vegas
+#### Gravité
+- [Unity Tutorial: Faux Gravity (walk on planets)](https://www.youtube.com/watch?v=gHeQ8Hr92P4) de Sebastian Lague
 
 #### Modélisation
 - [Tutorial: Blender MODELLING For Absolute Beginners | Low Poly Girl](https://www.youtube.com/watch?v=sbCW0Cs7aI8) de PIXXO 3D
 
+#### Exportation de Blender à Unity
+- [EXPORTING 3D Models from UNITY to BLENDER (FBX Exporter)](https://www.youtube.com/watch?v=-voE4FrU0Ms) de SpeedTutor
+
 #### Autres
 - [How to use GitHub with Unity](https://www.youtube.com/watch?v=qpXxcvS-g3g) de Brackeys
+- [Mini Unity Tutorial - How To Create Scrolling Credits Scene - Beginners Tutorial](https://www.youtube.com/watch?v=cj6hwCjiVZE) de Jimmy Vegas
 - [Road on a Terrain - Blender Tutorial](https://www.youtube.com/watch?v=eS-PharWyUk) de Xoio
 - [How to Make an Object Follow a Curve in Blender](https://www.youtube.com/watch?v=IfgdeupBfP0) de Holotna
