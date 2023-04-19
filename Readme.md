@@ -5,6 +5,30 @@
 - Quentin Dubois
 - Sami El Kateb
 
+## Lancement du jeu
+
+### Prérequis
+- Unity 2021.3.18f1
+
+### Lancer le jeu
+- Décompresser l'archive `Princess_Project_Chabanier_Dubois_Elkateb.zip`
+- Ouvrir le dossier décompressé dans Unity Hub
+- Lancer la scène `StartMenu` dans le dossier `Assets/Scenes`
+
+### Explication du lancement du jeu
+Tout d'abord, nous voulions utiliser un unitypackage afin d'exporter notre fichier, mais ce dernier ne peut pas exporter
+les settings de Build nécessaires au SceneLoader. 
+L'utilisateur aurait donc dû réimporter les scènes à la main dans les settings Build du projet, ce qui n'était pas envisageable, ou il aurait dû rajouter des fichiers a posteriori après l'importation de tous les assets.
+
+Ensuite, nous avons envisagé de rendre un projet Unity exécutable, mais nous avons rencontré des problèmes de compatibilité sur certaines de nos fonctionnalités.
+
+Nous avons ainsi préféré rendre le projet Unity zippé, qui est ouvrable directement dans Unity Hub sans aucunes manipulations.
+
+### Rendus du jeu
+- Projet Unity compressé
+- Unitypackage du projet Unity
+
+
 ## Ressources utilisées
 
 ### Musiques
